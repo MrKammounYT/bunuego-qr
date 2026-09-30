@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Bunuego Ticket</title>
+<script>
+  // Turns /bunuego-qr/BNG-7K4Q-9XMP (or /BNG-7K4Q-9XMP on the custom domain) into .../#BNG-7K4Q-9XMP
+  var parts = location.pathname.split("/").filter(Boolean);
+  var last = parts.pop() || "";
+  var base = "/" + parts.join("/") + (parts.length ? "/" : "");
+  location.replace(base + "#" + last);
+</script>
+</head>
+<body style="background:#141414"></body>
+</html>
